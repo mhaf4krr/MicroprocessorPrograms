@@ -1,0 +1,23 @@
+;B -> DIVIDENT
+;C -> DIVISOR
+;E -> RESULT of Division
+
+MVI B,0AH
+MVI C,05H
+
+
+
+CALL DIV
+
+MOV A,E
+
+HLT
+
+
+DIV: INR E 
+MOV A,B
+SUB C
+MOV B,A
+JNZ DIV
+RET
+

@@ -1,0 +1,2 @@
+LXI SP,3000H
+HLT

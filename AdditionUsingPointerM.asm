@@ -1,0 +1,12 @@
+MVI H,07H
+MVI L,D0H
+
+MOV A,M
+
+INR L
+
+ADD M
+
+STA 2002H
+
+HLT
